@@ -1,98 +1,116 @@
-package com.example.testpro;
+package com.example.TestPro;
 
 
+
+import android.support.v7.app.ActionBarActivity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.os.Bundle;  
 
 
 public class MainActivity extends ActionBarActivity {
-	Button rect,sq,cir,str;
-	TextView text;
-	EditText ed1;
+	
+	
+	EditText ed,ed1,ed2,ed3;
+	Button r,c,s,t;
+	String sh;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        rect=(Button) findViewById(R.id.rect);
-        sq=(Button) findViewById(R.id.sq);
-        cir=(Button) findViewById(R.id.cir);
-        str=(Button) findViewById(R.id.str);
-        text=(TextView) findViewById(R.id.text);
+        
+        ed=(EditText) findViewById(R.id.ed);
         ed1=(EditText) findViewById(R.id.ed1);
-        
-        
-        rect.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				String data="rectangle";
-				String val=ed1.getText().toString();
-				Intent i=new Intent(MainActivity.this,SecondActivity.class);
-				i.putExtra("value", data);
-				i.putExtra("dim", data);
+        ed2=(EditText) findViewById(R.id.);
+        ed3=(EditText) findViewById(R.id.ed3);
+        r=(Button) findViewById(R.id.b1);
+        c=(Button) findViewById(R.id.b2);
+        s=(Button) findViewById(R.id.b3);
+        t=(Button) findViewById(R.id.b4);
+        r.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	sh="rectangle";
+            	String data1=ed.getText().toString();
+            	String data2=ed1.getText().toString();
+            	String data3=ed2.getText().toString();
+            	String data4=ed3.getText().toString();
+            	
+            
+            	Intent i=new Intent(MainActivity.this,SecondActivity.class);
+				i.putExtra("username", sh);
+				i.putExtra("userdata1", data1);
+				i.putExtra("userdata2", data2);
+				i.putExtra("userdata3", data3);
+				i.putExtra("userdata4", data4);
 				startActivity(i);
-			}
-		});
-        sq.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				String val=ed1.getText().toString();
-				String data="square";
-				Intent i=new Intent(MainActivity.this,SecondActivity.class);
-				i.putExtra("value", data);
-				i.putExtra("dim", data);
+            }
+        });
+        c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	sh="circle";
+            	String data1=ed.getText().toString();
+            	String data2=ed1.getText().toString();
+            	String data3=ed2.getText().toString();
+            	String data4=ed3.getText().toString();
+            	Intent i=new Intent(MainActivity.this,SecondActivity.class);
+				i.putExtra("username", sh);
+				i.putExtra("userdata1", data1);
+				i.putExtra("userdata2", data2);
+				i.putExtra("userdata3", data3);
+				i.putExtra("userdata4", data4);
 				startActivity(i);
-			}
-		});
-        cir.setOnClickListener(new View.OnClickListener() {
-		
-		@Override
-		public void onClick(View arg0) {
-			String val=ed1.getText().toString();
-			String data="circle";
-			Intent i=new Intent(MainActivity.this,SecondActivity.class);
-			i.putExtra("value", data);
-			i.putExtra("dim", data);
-			startActivity(i);
-		}
-	});
-        str.setOnClickListener(new View.OnClickListener() {
-		
-		@Override
-		public void onClick(View arg0) {
-			String val=ed1.getText().toString();
-			String data="string";
-			Intent i=new Intent(MainActivity.this,SecondActivity.class);
-			i.putExtra("value", data);
-			i.putExtra("dim", data);
-			startActivity(i);
-		}
-	});
-    
-    
-    
-
+            }
+        });
+        s.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	sh="square";
+            	String data1=ed.getText().toString();
+            	String data2=ed1.getText().toString();
+            	String data3=ed2.getText().toString();
+            	String data4=ed3.getText().toString();
+            	Intent i=new Intent(MainActivity.this,SecondActivity.class);
+				i.putExtra("username", sh);
+				i.putExtra("userdata1", data1);
+				i.putExtra("userdata2", data2);
+				i.putExtra("userdata3", data3);
+				i.putExtra("userdata4", data4);
+				startActivity(i);
+            }
+        });
+        t.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	sh="triangle";
+            	String data1=ed.getText().toString();
+            	String data2=ed1.getText().toString();
+            	String data3=ed2.getText().toString();
+            	String data4=ed3.getText().toString();
+            	Intent i=new Intent(MainActivity.this,SecondActivity.class);
+				i.putExtra("username", sh);
+				i.putExtra("userdata1", data1);
+				i.putExtra("userdata2", data2);
+				i.putExtra("userdata3", data3);
+				i.putExtra("userdata4", data4);
+				startActivity(i);
+            }
+        });
     }
-
-	private Button findViewById(int rect2) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	private void setContentView(int activityMain) {
 		// TODO Auto-generated method stub
 		
 	}
-}
+
    
+    
+}
+
