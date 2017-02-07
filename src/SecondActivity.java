@@ -1,4 +1,4 @@
-package com.example.TestPro;
+//package com.example.TestPro;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;

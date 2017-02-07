@@ -15,7 +15,7 @@
         android:text="Enter the dimension" />
 
     <EditText
-        android:id="@+id/ed"
+        android:id="@+id/ed1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -25,55 +25,55 @@
         android:ems="10" />
 
     <Button
-        android:id="@+id/b2"
+        android:id="@+id/cir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/b1"
-        android:layout_alignBottom="@+id/b1"
-        android:layout_alignRight="@+id/ed"
+        android:layout_alignBaseline="@+id/rec"
+        android:layout_alignBottom="@+id/rec"
+        android:layout_alignRight="@+id/ed1"
         android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@+id/b1"
+        android:layout_toRightOf="@+id/rec"
         android:text="Circle" />
 
     <Button
-        android:id="@+id/b4"
+        android:id="@+id/tri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/b3"
-        android:layout_alignBottom="@+id/b3"
-        android:layout_alignLeft="@+id/b2"
+        android:layout_alignBaseline="@+id/squ"
+        android:layout_alignBottom="@+id/squ"
+        android:layout_alignLeft="@+id/cir"
         android:text="Triangle" />
 
     <EditText
         android:id="@+id/ed2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ed"
+        android:layout_below="@+id/ed1"
         android:layout_centerHorizontal="true"
         android:ems="10" />
 
     <Button
-        android:id="@+id/b1"
+        android:id="@+id/rec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/ed2"
-        android:layout_below="@+id/l"
+        android:layout_below="@+id/ed3"
         android:layout_marginTop="66dp"
         android:text="Rectangle" />
 
     <EditText
-        android:id="@+id/b"
+        android:id="@+id/ed4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/b2"
-        android:layout_below="@+id/l"
+        android:layout_alignRight="@+id/cir"
+        android:layout_below="@+id/ed3"
         android:ems="10" />
 
     <EditText
-        android:id="@+id/l"
+        android:id="@+id/ed3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/b4"
+        android:layout_alignRight="@+id/tri"
         android:layout_below="@+id/ed2"
         android:ems="10" >
 
@@ -81,11 +81,11 @@
     </EditText>
 
     <Button
-        android:id="@+id/b3"
+        android:id="@+id/squ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textView1"
-        android:layout_below="@+id/b1"
+        android:layout_below="@+id/rec"
         android:layout_marginTop="24dp"
         android:text="Square" />
 

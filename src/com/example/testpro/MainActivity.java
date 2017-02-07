@@ -2,6 +2,8 @@ package com.example.TestPro;
 
 
 
+import com.example.TestPro.SecondActivity;
+
 import android.support.v7.app.ActionBarActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -17,33 +19,33 @@ import android.widget.EditText;
 public class MainActivity extends ActionBarActivity {
 	
 	
-	EditText ed,ed1,ed2,ed3;
-	Button r,c,s,t;
+	EditText ed1,ed2,ed3,ed4;
+	Button rec,cir,squ,tri;
 	String sh;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        ed=(EditText) findViewById(R.id.ed);
         ed1=(EditText) findViewById(R.id.ed1);
-        ed2=(EditText) findViewById(R.id.);
+        ed2=(EditText) findViewById(R.id.ed2);
         ed3=(EditText) findViewById(R.id.ed3);
-        r=(Button) findViewById(R.id.b1);
-        c=(Button) findViewById(R.id.b2);
-        s=(Button) findViewById(R.id.b3);
-        t=(Button) findViewById(R.id.b4);
-        r.setOnClickListener(new View.OnClickListener() {
+        ed4=(EditText) findViewById(R.id.ed4);
+        rec=(Button) findViewById(R.id.rec);
+        cir=(Button) findViewById(R.id.cir);
+        squ=(Button) findViewById(R.id.squ);
+        tri=(Button) findViewById(R.id.tri);
+        rec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             	sh="rectangle";
-            	String data1=ed.getText().toString();
-            	String data2=ed1.getText().toString();
-            	String data3=ed2.getText().toString();
-            	String data4=ed3.getText().toString();
+            	String data1=ed1.getText().toString();
+            	String data2=ed2.getText().toString();
+            	String data3=ed3.getText().toString();
+            	String data4=ed4.getText().toString();
             	
             
-            	Intent i=new Intent(MainActivity.this,SecondActivity.class);
+            	Intent i=new Intent();
 				i.putExtra("username", sh);
 				i.putExtra("userdata1", data1);
 				i.putExtra("userdata2", data2);
@@ -51,16 +53,21 @@ public class MainActivity extends ActionBarActivity {
 				i.putExtra("userdata4", data4);
 				startActivity(i);
             }
+
+			private void startActivity(Intent i) {
+				// TODO Auto-generated method stub
+				
+			}
         });
-        c.setOnClickListener(new View.OnClickListener() {
+        cir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             	sh="circle";
-            	String data1=ed.getText().toString();
-            	String data2=ed1.getText().toString();
-            	String data3=ed2.getText().toString();
-            	String data4=ed3.getText().toString();
-            	Intent i=new Intent(MainActivity.this,SecondActivity.class);
+            	String data1=ed1.getText().toString();
+            	String data2=ed2.getText().toString();
+            	String data3=ed3.getText().toString();
+            	String data4=ed4.getText().toString();
+            	Intent i=new Intent();
 				i.putExtra("username", sh);
 				i.putExtra("userdata1", data1);
 				i.putExtra("userdata2", data2);
@@ -68,16 +75,21 @@ public class MainActivity extends ActionBarActivity {
 				i.putExtra("userdata4", data4);
 				startActivity(i);
             }
+
+			private void startActivity(Intent i) {
+				// TODO Auto-generated method stub
+				
+			}
         });
-        s.setOnClickListener(new View.OnClickListener() {
+        squ.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             	sh="square";
-            	String data1=ed.getText().toString();
-            	String data2=ed1.getText().toString();
-            	String data3=ed2.getText().toString();
-            	String data4=ed3.getText().toString();
-            	Intent i=new Intent(MainActivity.this,SecondActivity.class);
+            	String data1=ed1.getText().toString();
+            	String data2=ed2.getText().toString();
+            	String data3=ed3.getText().toString();
+            	String data4=ed4.getText().toString();
+            	Intent i=new Intent();
 				i.putExtra("username", sh);
 				i.putExtra("userdata1", data1);
 				i.putExtra("userdata2", data2);
@@ -85,16 +97,21 @@ public class MainActivity extends ActionBarActivity {
 				i.putExtra("userdata4", data4);
 				startActivity(i);
             }
+
+			private void startActivity(Intent i) {
+				// TODO Auto-generated method stub
+				
+			}
         });
-        t.setOnClickListener(new View.OnClickListener() {
+        tri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             	sh="triangle";
-            	String data1=ed.getText().toString();
-            	String data2=ed1.getText().toString();
-            	String data3=ed2.getText().toString();
-            	String data4=ed3.getText().toString();
-            	Intent i=new Intent(MainActivity.this,SecondActivity.class);
+            	String data1=ed1.getText().toString();
+            	String data2=ed2.getText().toString();
+            	String data3=ed3.getText().toString();
+            	String data4=ed4.getText().toString();
+            	Intent i=new Intent();
 				i.putExtra("username", sh);
 				i.putExtra("userdata1", data1);
 				i.putExtra("userdata2", data2);
@@ -102,6 +119,11 @@ public class MainActivity extends ActionBarActivity {
 				i.putExtra("userdata4", data4);
 				startActivity(i);
             }
+
+			private void startActivity(Intent i) {
+				// TODO Auto-generated method stub
+				
+			}
         });
     }
 
