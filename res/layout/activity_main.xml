@@ -8,9 +8,51 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.testpro.MainActivity" >
 
-    <TextView
+    <Button
+        android:id="@+id/rect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="89dp"
+        android:text="Rectangle" />
+
+    <Button
+        android:id="@+id/cir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rect"
+        android:layout_below="@+id/sq"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="51dp"
+        android:text="Circle" />
+
+    <Button
+        android:id="@+id/str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cir"
+        android:layout_alignBottom="@+id/cir"
+        android:layout_alignLeft="@+id/sq"
+        android:text="Star" />
+
+    <Button
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:text="Text" />
+
+    <Button
+        android:id="@+id/sq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rect"
+        android:layout_alignBottom="@+id/rect"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/cir"
+        android:text="Square" />
 
 </RelativeLayout>

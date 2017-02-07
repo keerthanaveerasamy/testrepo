@@ -1,6 +1,6 @@
-package com.example.TestPro;
+package com.example.testpro;
 
-import android.support.v7.app.ActionBarActivity;
+
 import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -20,7 +20,6 @@ public class MainActivity extends ActionBarActivity {
 	TextView text;
 	EditText ed1;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -85,5 +84,15 @@ public class MainActivity extends ActionBarActivity {
     
 
     }
+
+	private Button findViewById(int rect2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private void setContentView(int activityMain) {
+		// TODO Auto-generated method stub
+		
+	}
 }
    
